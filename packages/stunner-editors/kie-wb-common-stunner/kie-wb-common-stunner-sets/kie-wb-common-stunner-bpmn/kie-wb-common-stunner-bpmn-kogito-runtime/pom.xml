@@ -556,13 +556,26 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.gwtproject</groupId>
+            <artifactId>gwt-dev</artifactId>
+            <version>${version.org.gwtproject}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.gwtproject</groupId>
+            <artifactId>gwt-user</artifactId>
+            <version>${version.org.gwtproject}</version>
+          </dependency>
+        </dependencies>
         <configuration>
           <extraJvmArgs
           >-Xmx3G -Xms512m -Xss1M -XX:CompileThreshold=7000 -XX:+UseSerialGC -Derrai.dynamic_validation.enabled=true</extraJvmArgs>
           <module>org.kie.workbench.common.stunner.kogito.KogitoBPMNEditor</module>
           <localWorkers>8</localWorkers>
+          <sourceLevel>11</sourceLevel>
           <noServer>false</noServer>
-          <logLevel>WARN</logLevel>
+          <logLevel>DEBUG</logLevel>
           <disableCastChecking>true</disableCastChecking>
           <optimizationLevel>9</optimizationLevel>
           <draftCompile>false</draftCompile>

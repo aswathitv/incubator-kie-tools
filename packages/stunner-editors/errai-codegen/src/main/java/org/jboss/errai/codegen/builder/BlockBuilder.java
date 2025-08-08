@@ -45,14 +45,14 @@ public interface BlockBuilder<T> extends Finishable<T>, Iterable<Statement> {
    * @param stmt the statement to add to the block
    * @return
    */
-  public BlockBuilder<T> _(Statement stmt);
+  //public BlockBuilder<T> _(Statement stmt);
 
   /**
    * Alias for {@link #append(org.jboss.errai.codegen.InnerClass)} )}
    * @param innerClass the statement to add to the block
    * @return
    */
-  public BlockBuilder<T> _(InnerClass innerClass);
+  //public BlockBuilder<T> _(InnerClass innerClass);
 
   /**
    * Return a list of statements from the specified statement (inclusive), and remove all of the returned statements

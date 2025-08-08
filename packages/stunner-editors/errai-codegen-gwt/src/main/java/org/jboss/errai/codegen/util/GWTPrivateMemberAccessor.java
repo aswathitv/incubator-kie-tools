@@ -82,7 +82,7 @@ public class GWTPrivateMemberAccessor implements PrivateMemberAccessor {
 
     methodBuilder.modifiers(appendJsni(modifiers))
             .body()
-            ._(StringStatement.of(JSNIUtil.fieldAccess(field) + " = value"))
+            .append(StringStatement.of(JSNIUtil.fieldAccess(field) + " = value"))
             .finish();
   }
 
@@ -105,7 +105,7 @@ public class GWTPrivateMemberAccessor implements PrivateMemberAccessor {
 
     instance.modifiers(appendJsni(modifiers))
             .body()
-            ._(StringStatement.of("return " + JSNIUtil.fieldAccess(field)))
+            .append(StringStatement.of("return " + JSNIUtil.fieldAccess(field)))
             .finish();
   }
 
@@ -141,7 +141,7 @@ public class GWTPrivateMemberAccessor implements PrivateMemberAccessor {
             .parameters(DefParameters.fromParameters(wrapperDefParms))
             .modifiers(appendJsni(modifiers))
             .body()
-            ._(StringStatement.of(JSNIUtil.methodAccess(erasedMethod)))
+            .append(StringStatement.of(JSNIUtil.methodAccess(erasedMethod)))
             .finish();
   }
 
@@ -160,7 +160,7 @@ public class GWTPrivateMemberAccessor implements PrivateMemberAccessor {
 
     final DefParameters methodDefParms = DefParameters.from(constructor);
 
-    Annotation[] annotations = NO_ANNOTATIONS;
+    Annotation[] annotations = new Annotation[0];
     for (MetaParameter p : constructor.getParameters()) {
       if (p.getType().getCanonicalName().equals("long")) {
         annotations = new Annotation[] { UNSAFE_NATIVE_LONG_ANNOTATION };
@@ -172,7 +172,7 @@ public class GWTPrivateMemberAccessor implements PrivateMemberAccessor {
             .parameters(methodDefParms)
             .modifiers(Modifier.Static, Modifier.JSNI)
             .body()
-            ._(StringStatement.of(JSNIUtil.methodAccess(constructor)))
+            .append(StringStatement.of(JSNIUtil.methodAccess(constructor)))
             .finish();
   }
 

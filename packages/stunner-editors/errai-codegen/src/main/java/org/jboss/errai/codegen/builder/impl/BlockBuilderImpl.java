@@ -105,15 +105,15 @@ public class BlockBuilderImpl<T> implements BlockBuilder<T> {
     return this;
   }
 
-  @Override
-  public BlockBuilder<T> _(final Statement stmt) {
-    return append(stmt);
-  }
-
-  @Override
-  public BlockBuilder<T> _(final InnerClass innerClass) {
-    return append(innerClass);
-  }
+//  @Override
+//  public BlockBuilder<T> _(final Statement stmt) {
+//    return append(stmt);
+//  }
+//
+//  @Override
+//  public BlockBuilder<T> _(final InnerClass innerClass) {
+//    return append(innerClass);
+//  }
 
   @Override
   public List<Statement> splitFrom(final Statement statement) {

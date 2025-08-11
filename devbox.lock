@@ -1,10 +1,6 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-06-22T15:15:55Z",
-      "resolved": "github:NixOS/nixpkgs/3078b9a9e75f1790e6d6ef9955fdc6a2d1740cc6?lastModified=1750605355&narHash=sha256-xT8cPLTxlktxI9vSdoBlAVK7dXgd8IK59j7ZwzkkhnI%3D"
-    },
     "glibcLocales@2.40-66": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#glibcLocales",
@@ -247,51 +243,51 @@
         }
       }
     },
-    "temurin-bin-17@17.0.9": {
-      "last_modified": "2024-06-12T20:55:33Z",
-      "resolved": "github:NixOS/nixpkgs/a9858885e197f984d92d7fe64e9fff6b2e488d40#temurin-bin-17",
+    "semeru-bin@21.0.3": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#semeru-bin",
       "source": "devbox-search",
-      "version": "17.0.9",
+      "version": "21.0.3",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/6dfds89qqlzg4rdp9bf3nlpisx05lmcj-temurin-bin-17.0.9",
+              "path": "/nix/store/6gjs8i21y68jb3bx50j2j0jl0qil6v5r-semeru-bin-21.0.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/6dfds89qqlzg4rdp9bf3nlpisx05lmcj-temurin-bin-17.0.9"
+          "store_path": "/nix/store/6gjs8i21y68jb3bx50j2j0jl0qil6v5r-semeru-bin-21.0.3"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/xbkf0hfcaw0jbqf7pm70xwinn655pz50-temurin-bin-17.0.9",
+              "path": "/nix/store/za2759cic5kqgdx3vilcw4n8pc9i8prb-semeru-bin-21.0.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/xbkf0hfcaw0jbqf7pm70xwinn655pz50-temurin-bin-17.0.9"
+          "store_path": "/nix/store/za2759cic5kqgdx3vilcw4n8pc9i8prb-semeru-bin-21.0.3"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/rxi440bp4g1njffgrbl5w1209hclawxn-temurin-bin-17.0.9",
+              "path": "/nix/store/s9v26w3i2vdjkjlp5nbj2g94382q0b8h-semeru-bin-21.0.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/rxi440bp4g1njffgrbl5w1209hclawxn-temurin-bin-17.0.9"
+          "store_path": "/nix/store/s9v26w3i2vdjkjlp5nbj2g94382q0b8h-semeru-bin-21.0.3"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/55gj16bms465y8giaf5jch2bbs12yrbf-temurin-bin-17.0.9",
+              "path": "/nix/store/y4cmm9z7q5f8giy1hshaf40ndqliy8km-semeru-bin-21.0.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/55gj16bms465y8giaf5jch2bbs12yrbf-temurin-bin-17.0.9"
+          "store_path": "/nix/store/y4cmm9z7q5f8giy1hshaf40ndqliy8km-semeru-bin-21.0.3"
         }
       }
     }

@@ -243,51 +243,51 @@
         }
       }
     },
-    "semeru-bin@21.0.3": {
+    "temurin-bin@21.0.7": {
       "last_modified": "2025-07-28T17:09:23Z",
-      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#semeru-bin",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#temurin-bin",
       "source": "devbox-search",
-      "version": "21.0.3",
+      "version": "21.0.7",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/6gjs8i21y68jb3bx50j2j0jl0qil6v5r-semeru-bin-21.0.3",
+              "path": "/nix/store/hnn26c6f9y6cszwkg4r9zih3dlxggdhs-temurin-bin-21.0.7",
               "default": true
             }
           ],
-          "store_path": "/nix/store/6gjs8i21y68jb3bx50j2j0jl0qil6v5r-semeru-bin-21.0.3"
+          "store_path": "/nix/store/hnn26c6f9y6cszwkg4r9zih3dlxggdhs-temurin-bin-21.0.7"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/za2759cic5kqgdx3vilcw4n8pc9i8prb-semeru-bin-21.0.3",
+              "path": "/nix/store/xb8rk4mpi19115ffm510lpj7wc2zy2bs-temurin-bin-21.0.7",
               "default": true
             }
           ],
-          "store_path": "/nix/store/za2759cic5kqgdx3vilcw4n8pc9i8prb-semeru-bin-21.0.3"
+          "store_path": "/nix/store/xb8rk4mpi19115ffm510lpj7wc2zy2bs-temurin-bin-21.0.7"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/s9v26w3i2vdjkjlp5nbj2g94382q0b8h-semeru-bin-21.0.3",
+              "path": "/nix/store/i6ylf113ipv5akzwhicanjyrbmca5b9z-temurin-bin-21.0.7",
               "default": true
             }
           ],
-          "store_path": "/nix/store/s9v26w3i2vdjkjlp5nbj2g94382q0b8h-semeru-bin-21.0.3"
+          "store_path": "/nix/store/i6ylf113ipv5akzwhicanjyrbmca5b9z-temurin-bin-21.0.7"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/y4cmm9z7q5f8giy1hshaf40ndqliy8km-semeru-bin-21.0.3",
+              "path": "/nix/store/m4yh3mhpvvsiw6prbd1w269dvxxnjk47-temurin-bin-21.0.7",
               "default": true
             }
           ],
-          "store_path": "/nix/store/y4cmm9z7q5f8giy1hshaf40ndqliy8km-semeru-bin-21.0.3"
+          "store_path": "/nix/store/m4yh3mhpvvsiw6prbd1w269dvxxnjk47-temurin-bin-21.0.7"
         }
       }
     }

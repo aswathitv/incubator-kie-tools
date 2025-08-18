@@ -19,7 +19,6 @@
 
 package org.kie.workbench.common.dmn.showcase.client.selenium;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import org.kie.workbench.common.dmn.showcase.client.common.DMNDesignerBaseIT;
 import org.kie.workbench.common.dmn.showcase.client.selenium.component.DataTypesEditor;
@@ -33,7 +32,6 @@ import org.kie.workbench.common.dmn.showcase.client.selenium.component.DataTypes
  *
  * For more details see https://issues.redhat.com/browse/KOGITO-4179
  */
-@Ignore("This test is skipped after Semeru 21 upgrade")
 public class DMNDesignerDataTypesPopOverIT extends DMNDesignerBaseIT {
 
     @Test

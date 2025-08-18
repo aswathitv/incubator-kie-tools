@@ -1634,26 +1634,6 @@
   </build>
 
   <profiles>
-    <!-- <profile>
-        <id>jdk-semeru</id>
-        <activation>
-          <property>
-            <name>java.vendor</name>
-            <value>IBM Corporation</value>
-          </property>
-        </activation>
-        <build>
-          <plugins>
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>gwt-maven-plugin</artifactId>
-              <configuration>
-                <argLine>-Dcom.ibm.enableClassCaching=false</argLine>
-              </configuration>
-            </plugin>
-          </plugins>
-        </build>
-      </profile> -->
     <!-- ERRAI profiles -->
     <profile>
       <id>macJvm6Settings</id>
@@ -2159,5 +2139,26 @@
         </pluginManagement>
       </build>
     </profile>
+
+    <!-- <profile>
+        <id>jdk-semeru</id>
+        <activation>
+          <property>
+            <name>java.vendor</name>
+            <value>IBM Corporation</value>
+          </property>
+        </activation>
+        <build>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <configuration>
+                <extraJvmArgs>-Dcom.ibm.enableClassCaching=false</extraJvmArgs>
+              </configuration>
+            </plugin>
+          </plugins>
+        </build>
+      </profile> -->
   </profiles>
 </project>

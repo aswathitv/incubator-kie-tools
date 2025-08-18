@@ -27,7 +27,6 @@ import org.junit.Test;
 import org.kie.workbench.common.dmn.showcase.client.common.DMNDesignerBaseIT;
 
 import static java.util.Arrays.asList;
-@Ignore("This test is skipped after Semeru 21 upgrade")
 public class DMNBackwardCompatibilityIT extends DMNDesignerBaseIT {
 
     @Test

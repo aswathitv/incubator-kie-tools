@@ -145,6 +145,7 @@
 
     <!-- General -->
     <version.checkstyle>8.29</version.checkstyle>
+    <maven.compiler.release>17</maven.compiler.release>
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>

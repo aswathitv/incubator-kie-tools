@@ -28,6 +28,6 @@ test.describe("Namespace in Href - Diagram", () => {
   test("should show edges if namespace present in hrefs", async ({ page }) => {
     await expect(page.getByText("Required Decision A")).toBeAttached();
     await expect(page.getByText("Decision in Need")).toBeAttached();
-    await expect(page).toHaveScreenshot("decision-with-namespace-in-href.png");
+    await expect(page).toHaveScreenshot("namespace-in-required-decision-href.png");
   });
 });

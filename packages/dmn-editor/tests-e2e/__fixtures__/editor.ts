@@ -65,7 +65,7 @@ export class Editor {
 
   public async openDecisionWithNamespaceInHref() {
     await this.page.goto(
-      `${this.baseURL}/iframe.html?args=&id=use-cases-decision-with-namespace-in-href--decision-with-namespace-in-href&viewMode=story`
+      `${this.baseURL}/iframe.html?args=&id=use-cases-namespace-in-required-decision-href--namespace-in-required-decision-href&viewMode=story`
     );
   }
 }

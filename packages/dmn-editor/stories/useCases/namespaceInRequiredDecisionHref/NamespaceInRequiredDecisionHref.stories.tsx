@@ -24,7 +24,7 @@ import { Empty } from "../../misc/empty/Empty.stories";
 import { DmnEditor, DmnEditorProps } from "../../../src/DmnEditor";
 import { StorybookDmnEditorProps } from "../../dmnEditorStoriesWrapper";
 
-export const decisionWithNamespaceInHref = `<?xml version="1.0" encoding="UTF-8" ?>
+export const namespaceInRequiredDecisionHref = `<?xml version="1.0" encoding="UTF-8" ?>
 <definitions xmlns="https://www.omg.org/spec/DMN/20240513/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20240513/FEEL/" namespace="https://kie.org/dmn/_BCA8E83B-E3E6-432C-BFD6-44CD55A76A6C" id="_2BC7DBF7-90C6-448A-B336-05F26D1FEC8E" name="DMN_18EBF2E7-B344-47B1-827A-3A2E08B8E9CA" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
   <decision name="Required Decision A" id="_7A15C07E-4A30-450D-9796-A2454EC55279">
     <variable name="Required Decision A" id="_B156824F-3ABD-4387-9711-08B8A3A5241C" />
@@ -58,7 +58,7 @@ export const decisionWithNamespaceInHref = `<?xml version="1.0" encoding="UTF-8"
 `;
 
 const meta: Meta<DmnEditorProps> = {
-  title: "Use cases/Decision With Namespace In Href",
+  title: "Use cases/Namespace In Required Decision Href",
   component: DmnEditor,
   includeStories: /^[A-Z]/,
 };
@@ -66,10 +66,10 @@ const meta: Meta<DmnEditorProps> = {
 export default meta;
 type Story = StoryObj<StorybookDmnEditorProps>;
 
-const marshaller = getMarshaller(decisionWithNamespaceInHref, { upgradeTo: "latest" });
+const marshaller = getMarshaller(namespaceInRequiredDecisionHref, { upgradeTo: "latest" });
 const model = marshaller.parser.parse();
 
-export const DecisionWithNamespaceInHref: Story = {
+export const NamespaceInRequiredDecisionHref: Story = {
   render: Empty.render,
   args: {
     model: model,

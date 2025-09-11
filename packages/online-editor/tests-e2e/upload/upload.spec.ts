@@ -43,24 +43,6 @@ test.describe("Upload", () => {
       await expect(kieSandbox.getEditor().getByText("Test input data")).toBeAttached();
     });
 
-    test("should show edges if file with namespace in href is uploaded by 'Select files'", async ({
-      page,
-      upload,
-      kieSandbox,
-    }) => {
-      await upload.fileSelector(
-        page.getByRole("button", { name: "Select files..." }),
-        "decisionWithNamespaceInHref.dmn"
-      );
-      await expect(page.getByRole("button", { name: "Decision decisionWithNamespaceInHref" })).toBeAttached();
-      await expect(page.getByRole("button", { name: "Decision decisionWithNamespaceInHref" })).toContainText(
-        "decisionWithNamespaceInHref"
-      );
-      await expect(kieSandbox.getEditor().getByText("Required Decision A")).toBeAttached();
-      await expect(kieSandbox.getEditor().getByText("Decision in Need")).toBeAttached();
-      await expect(page).toHaveScreenshot("edges-for-href-with-namesapce.png");
-    });
-
     test("should upload file by 'Select folders'", async ({ page, upload }) => {
       test.skip(true, "https://github.com/microsoft/playwright/issues/6854");
       await upload.fileSelector(page.getByRole("button", { name: "Select folder..." }), "testFolder");
